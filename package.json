@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "prisma": "^8.0.0-rc.33"
+  },
+  "dependencies": {
+    "@prisma/orm-postgres": "^8.0.0-rc.23",
+    "dotenv": "^18.0.9"
+  }
+}
