@@ -13,7 +13,7 @@ async function main() {
     data: [
       {
         email: 'head.librarian@library.org',
-        name: 'Peter Gitonga',
+        name: 'Peter Njiiri',
         role: Role.LIBRARIAN,
       },
       {
@@ -23,12 +23,12 @@ async function main() {
       },
       {
         email: 'patron.alex@gmail.com',
-        name: 'Alex Mwangi',
+        name: 'Alex Wanjala',
         role: Role.PATRON,
       },
       {
         email: 'patron.clara@gmail.com',
-        name: 'Helena Chami',
+        name: 'Clara Mutheu',
         role: Role.PATRON,
       },
     ],
@@ -46,10 +46,10 @@ async function main() {
     },
     {
       name: 'Clinical Oncology',
-      description: 'Clinical pathology, oncology protocols, and management of different malignacies.',
+      description: 'Clinical pathology, oncology protocols, and medical Management.',
     },
     {
-      name: 'Stock trading & Financial Markets',
+      name: 'Stcok Trading & Financial Markets',
       description: 'Macroeconomics, equity analysis, and institutional corporate finance.',
     },
   ];
@@ -96,7 +96,7 @@ async function main() {
     {
       title: 'Patterns of Enterprise Application Architecture',
       isbn: '978-0321127426',
-      author: 'Martin Fowler',
+      author: 'Martin Luther',
       publishedYear: 2002,
       copiesAvailable: 2,
       genreId: csGenre.id,
@@ -120,7 +120,7 @@ async function main() {
       genreId: scifiGenre.id,
     },
     {
-      title: 'Foundation',
+      title: 'Foundation of Web Development',
       isbn: '978-0553293357',
       author: 'Isaac Asimov',
       publishedYear: 1951,
@@ -138,7 +138,7 @@ async function main() {
 
     // Oncology & Medical Sciences
     {
-      title: 'The Emperor of All Maladies: A Biography of Cancer',
+      title: 'The Emperor of All Maladies: A Biology of Cancer',
       isbn: '978-1439170915',
       author: 'Siddhartha Mukherjee',
       publishedYear: 2010,
