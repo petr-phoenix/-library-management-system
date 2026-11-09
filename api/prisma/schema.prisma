@@ -1,6 +1,6 @@
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  
 }
 
 generator client {
@@ -17,6 +17,7 @@ model User {
   email     String   @unique
   name      String
   role      Role     @default(PATRON)
+  reviews   Review[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -32,36 +33,6 @@ model Genre {
   updatedAt   DateTime @updatedAt
 
   @@map("genres")
-}
-
-model Book {
-  id              String   @id @default(uuid())
-  title           String
-  isbn            String   @unique
-  author          String
-  publishedYear   Int
-  copiesAvailable Int      @default(1)
-  genreId         String
-  genre           Genre    @relation(fields: [genreId], references: [id], onDelete: Restrict)
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
-
-  @@index([genreId])
-  @@map("books")
-}
-
-// api/prisma/schema.prisma (Updated Relations)
-
-model User {
-  id        String   @id @default(uuid())
-  email     String   @unique
-  name      String
-  role      Role     @default(PATRON)
-  reviews   Review[]
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@map("users")
 }
 
 model Book {

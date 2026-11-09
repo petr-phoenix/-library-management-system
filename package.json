@@ -1,0 +1,10 @@
+{
+  "name": "library-management-system",
+  "prisma": {
+    "schema": "api/prisma/schema.prisma"
+  },
+  "devDependencies": {
+    "@prisma/client": "^7.10.1",
+    "prisma": "^7.10.1"
+  }
+}
